@@ -1,10 +1,10 @@
-# PopupService for Vue.js
+# A popup service for Vue.js
 
-**PopupService** enables dynamic popup creation in Vue.js applications.
+**vue-popup** enables dynamic popup creation in Vue.js applications.
 
 ## Features
 
-- **Dynamic Popups**: Custom headers, bodies, and actions.
+- **Dynamic Popups**: Custom headers and bodies.
 - **Promise-based**: Handle outcomes easily with promises.
 - **Custom Buttons**: Tailor button text.
 
