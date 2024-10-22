@@ -16,7 +16,7 @@
     "vite": "^5.4.8"
   },
   "description": "Service for creating and managing dynamic Vue popups.",
-  "main": "vite.config.js",
+  "main": "src/PopupService.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/lucassrv/vue-popup"
