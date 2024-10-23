@@ -16,8 +16,6 @@ npm install @your-vue-project/popup-service
 
 ## Usage
 ```javascript
-import PopupService from '@your-vue-project/popup-service';
-
 PopupService.show({
   header: 'Confirm',
   body: 'Proceed?',
@@ -34,7 +32,9 @@ PopupService.show({
 You can also set body and headers with HTML
 
 ```javascript
-      PopupService.show({
+    import { h } from 'vue'
+
+    PopupService.show({
         header: h('h1', 'This is the header'),
         body: [
           h('h1', 'This is the body with a list'),
@@ -50,9 +50,9 @@ You can also set body and headers with HTML
             h('li', 'Item 3')
           ])
         ],
-      }).then(response => {
+    }).then(response => {
         console.log(response)
-      })
+    })
 ```
 
 ## License
