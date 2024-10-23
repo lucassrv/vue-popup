@@ -1,4 +1,3 @@
-<!-- Modal.vue -->
 <template>
     <transition name="modal">
       <div class="modal-mask" v-if="isOpen">

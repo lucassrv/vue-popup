@@ -11,11 +11,14 @@
 ## Installation
 
 ```bash
-npm install @your-vue-project/popup-service
+npm install @lucastv/vue-popup
 ```
 
 ## Usage
 ```javascript
+import PopupService from '@lucastv/vue-popup';
+import "@lucastv/vue-popup/popup.css"
+
 PopupService.show({
   header: 'Confirm',
   body: 'Proceed?',
