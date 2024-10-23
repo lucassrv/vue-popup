@@ -4,8 +4,8 @@
         <div class="modal-wrapper">
           <div class="modal-container">
             <div class="modal-header">
-              <button @click="cancel" class="close">x</button>
               <slot name="header"></slot>
+              <button @click="cancel" class="close">x</button>
             </div>
             <div class="modal-body">
                 <slot name="body"></slot>
