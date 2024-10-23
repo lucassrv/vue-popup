@@ -13,13 +13,10 @@ const PopupService = {
     document.body.appendChild(container);
 
     let closePopup = null;
-
     const app = createApp({
       render() {
         return h(Popup, {
           isOpen: true,
-          header,
-          body,
           cancelBtnLabel,
           confirmBtnLabel,
           onCancel: () => {
@@ -28,7 +25,12 @@ const PopupService = {
           onConfirm: () => {
             closePopup(true);
           },
-        });
+        },
+        {
+            header: () => h('div', header),
+            body: () => h('div', body),
+        }
+        );
       },
       setup() {
         provide('closePopup', (result) => {

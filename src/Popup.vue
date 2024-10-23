@@ -5,10 +5,10 @@
         <div class="modal-wrapper">
           <div class="modal-container">
             <div class="modal-header">
-              <h1>{{ header }}</h1>
+              <slot name="header"></slot>
             </div>
             <div class="modal-body">
-              <p>{{ body }}</p>
+                <slot name="body"></slot>
             </div>
             <div class="modal-footer">
               <button v-if="cancelBtnLabel" class="modal-button" @click="cancel">{{ cancelBtnLabel }}</button>
@@ -82,8 +82,7 @@
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
-  width: 50%;
-  height: 50%;
+  padding: 20px;
   overflow-y: auto;
 }
 

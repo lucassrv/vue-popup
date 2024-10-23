@@ -31,6 +31,29 @@ PopupService.show({
     }
 });
 ```
+You can also set body and headers with HTML
+
+```javascript
+      PopupService.show({
+        header: h('h1', 'This is the header'),
+        body: [
+          h('h1', 'This is the body with a list'),
+          h('ul', [
+            h('li', 'Item 1'),
+            h('li', [
+              'Item 2',
+              h('ul', [
+                h('li', 'Subitem 2.1'),
+                h('li', 'Subitem 2.2')
+              ])
+            ]),
+            h('li', 'Item 3')
+          ])
+        ],
+      }).then(response => {
+        console.log(response)
+      })
+```
 
 ## License
 ISC
